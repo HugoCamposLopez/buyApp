@@ -4,7 +4,7 @@ import React from 'react'
 export const Login = () => {
   return (
     <View>
-      <Text>Estoy en Login</Text>
+      <Text style={{ color: 'black' }}>Estoy en Login</Text>
     </View>
   )
 }

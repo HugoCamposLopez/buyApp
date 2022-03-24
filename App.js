@@ -1,13 +1,11 @@
 import React from 'react'
-import { SafeAreaView, Text } from 'react-native'
-import Ionicon from 'react-native-vector-icons/Ionicons'
-
+import { NavigationContainer } from '@react-navigation/native'
+import { StackNavigator } from './src/Navigation/StackNavigator'
 const App = () => {
   return (
-    <SafeAreaView>
-      <Text style={{ fontSize: 30 }}> Hola mundo</Text>
-      <Ionicon name='alarm' size={50} />
-    </SafeAreaView>
+<NavigationContainer>
+    <StackNavigator/>
+</NavigationContainer>
   )
 }
 

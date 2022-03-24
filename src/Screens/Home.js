@@ -1,10 +1,10 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-export const Register = () => {
+export const Home = () => {
   return (
     <View>
-      <Text style={{ color: 'black' }}>Estoy en Register</Text>
+      <Text style={{ color: 'black' }}>Estoy en Home</Text>
     </View>
   )
 }
