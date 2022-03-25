@@ -1,18 +1,15 @@
-import { View, Text, Button } from 'react-native'
+import { Text } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { Container } from './StyledScreens'
+import { Button } from '../index.js'
 import React from 'react'
 
 export const Main = () => {
   const navigation = useNavigation()
   return (
-    <View>
-      <Text style={{ color: 'black' }}>Estoy en Main</Text>
-      <Button title='Ir a Home' onPress={() => navigation.navigate('Home')}>
-      </Button>
-      <Button title='Ir a Login' onPress={() => navigation.navigate('Login')}>
-      </Button>
-      <Button title='Ir a Register' onPress={() => navigation.navigate('Register')}>
-      </Button>
-    </View>
+    <Container>
+      <Button Text={'Iniciar sesión'}/>
+      <Button Text={'Registrarse'}/>
+    </Container>
   )
 }
