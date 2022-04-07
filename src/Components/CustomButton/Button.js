@@ -1,10 +1,13 @@
 import React from 'react'
-import { PushButton, PushButtonText } from './Styled'
+import { ContainerButton, PushButtonText } from './Styled'
 
-export const Button = (props) => {
+export const Button = ({ marginTop, marginBottom, Text, onPress }) => {
   return (
-    <PushButton>
-      <PushButtonText>{props.Text}</PushButtonText>
-    </PushButton>
+    <ContainerButton
+      marginTop={marginTop}
+      marginBottom={marginBottom}
+      onPress={onPress}>
+      <PushButtonText>{Text}</PushButtonText>
+    </ContainerButton>
   )
 }
